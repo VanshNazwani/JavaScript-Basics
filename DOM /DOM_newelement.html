@@ -14,9 +14,33 @@
     </div>
 </body>
 <script>
-    document.querySelector('.parent')
-    console.log(parent);
+     const parent=document.querySelector('.parent')
+    console.log(parent); 
     console.log(parent.children);
-        
+    
+
+    const day1 = document.querySelector('.day')
+    console.log(day1);
+    console.log(day1.parentElement);
+
+    console.log(" NODES ", parent.childNodes);
+    
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = (Math.random() *10+1)
+    div.id = Math.round(Math.random() *10+1) // round off of the key 
+
+    div.setAttribute("TITLE","generated")
+    div.style.backgroundColor = "blue"
+    div.style.padding = "12px"
+
+
+    // div.innerText = "VANSH NAZWANI"
+    const addtext = document.createTextNode("VANSH")
+    div.appendChild(addtext)
+
+
+    document.body.appendChild(div)
 </script>
 </html>
