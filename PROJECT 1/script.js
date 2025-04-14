@@ -1,16 +1,3 @@
-# project related to DOM 
-
-## project links 
-[Click Here]()https://stackblitz.com/edit/dom-project-chaiaurcode-udqkda7n?file=index.html
-
-# solution code 
-
-
-## project 1 
-
-``` JAVASCRIPT 
-console.log("VANSH)
-
 const button = document.querySelectorAll('.button')
 const body = document.querySelector("body")
 
@@ -34,4 +21,3 @@ button.forEach(function(button){
    
   });
 });
-```
