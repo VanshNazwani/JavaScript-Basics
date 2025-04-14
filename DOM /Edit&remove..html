@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body style="background-color: black; color: aquamarine;">
+    <ul class="language">
+        <li>JAVASCRIPT</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langname){
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`
+        document.querySelector('.language'). appendChild(li)
+    }
+  
+    addlanguage("python");
+    addlanguage("JAVA");
+
+    function addlanguageoptimization(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanguageoptimization('ruby')
+    addlanguageoptimization('golang')
+
+    // EDIT 
+
+    const secondlang = document.querySelector("li:nth-child(2)")
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondlang.replaceWith(newli)
+    console.log(newli);
+   
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li> TYPESCRIPT </li>'
+    // remove 
+
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+
+</script>
+</html>
