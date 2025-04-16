@@ -14,34 +14,40 @@
     <button id="stop">STOP</button>
 </body>
 <script>
-    setTimeout(function(){
-        console.log("Vansh Nazwani");
-    }, 2000) 
+    // setTimeout(function(){
+    //     console.log("Vansh Nazwani");
+    // }, 2000) 
 
     const say = function(){
-        console.log("Vansh Nazwani");
+        console.log(Date.now());
     }
-    setTimeout(say ,2000) 
+     
 
-    const changetext = function(){
-        document.querySelector('h1').innerHTML = "best js series "
-    }
+    // const changetext = function(){
+    //     document.querySelector('h1').innerHTML = "best js series "
+    // }
     
-    const changetext1 = setTimeout(changetext ,2000) 
-    document.querySelector('#stop')
+    let s;
+    
+    document.querySelector('#start').
     addEventListener('click',function () {
-        clearTimeout(changetext1)
-        console.log("STOPPED");
+        s= setInterval(say ,2000)
+    })
+
+     
+    document.querySelector('#stop').
+    addEventListener('click',function () {
+        clearInterval(s)
     })
 
 
     //* ********* interval **************
 
-    const intervaldate = function (str) { // it will continues return after interval
-        console.log(str, Date.now());
-                
-    }
-    const intervalvalid = setInterval(intervaldate,1000,'vansh');
-    clearInterval(intervalvalid)
+    // it will continues return after interval
+       
+
+
+
+  
 </script>
 </html>
