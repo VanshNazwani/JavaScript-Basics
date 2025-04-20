@@ -9,7 +9,7 @@ const chai = {
         console.log("chai not prepared");
     }
 };
-
+ 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
 Object.defineProperty(chai, 'name', {
