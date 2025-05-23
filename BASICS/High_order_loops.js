@@ -1,4 +1,5 @@
 // ******  FOR OF LOOP ***********
+// for_of is not used in object
 
 const arr = [1,2,3,4,5]
  
@@ -28,7 +29,7 @@ for (const [key,value] of map) {
 }
 
 
-// for_of is not used in object
+
  
 // ***** FOR IN LOOP ********
 
